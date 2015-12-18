@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>Angular Boilerplate</title>
+    <script src="https://code.angularjs.org/1.4.8/angular.js"></script>
+    <script src="scripts/app.build.js"></script>
+  </head>
+  <body ng-app="app">
+    <div ng-controller="MainController">
+      <div>Testing Angular with math!  1 + 1 = {{ 1 + 1 }}</div>
+      <div ng-repeat="item in testArray">{{ item }}</div>
+      <div ng-include="templates.mainView"></div>
+    </div>
+  </body>
+</html>
